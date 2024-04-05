@@ -1,24 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RateDialogUIComponent : MonoBehaviour
 {
     public CanvasGroup canvasGroup;
+    public Button closeBtn;
 
-    private float _openTime;
-    
+
+    public AnimationCurve animCurve;
+
+    private void Start()
+    {
+        closeBtn.onClick.AddListener(CloseRatePanel);
+    }
+
     public void Open()
     {
         gameObject.SetActive(true);
-        canvasGroup.alpha = 0.0f;
     }
 
-    void Update()
+    private void CloseRatePanel()
     {
-        if(canvasGroup.alpha < 1.0f)
-        {
-            canvasGroup.alpha += 0.01f;
-        }
+        gameObject.SetActive(false);
     }
 }

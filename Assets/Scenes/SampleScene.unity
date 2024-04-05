@@ -9147,6 +9147,7 @@ GameObject:
   - component: {fileID: 1295274257}
   - component: {fileID: 1295274259}
   - component: {fileID: 1295274260}
+  - component: {fileID: 1295274261}
   m_Layer: 5
   m_Name: RatePanel
   m_TagString: Untagged
@@ -9243,6 +9244,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 1295274259}
+  closeBtn: {fileID: 447086726}
+  animCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.058644038
+      outSlope: 0.058644038
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2.3147159
+      value: 0.13574429
+      inSlope: 0.14249848
+      outSlope: 0.14249848
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.5805131
+    - serializedVersion: 3
+      time: 2.7919738
+      value: 0.43941173
+      inSlope: 1.722168
+      outSlope: 1.722168
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2.990631
+      value: 0.9972534
+      inSlope: 2.8080606
+      outSlope: 2.8080606
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!95 &1295274261
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295274255}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d75bb0b90ffd7e44aff97bbe08b09db, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1330381505
 GameObject:
   m_ObjectHideFlags: 0
